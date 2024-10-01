@@ -1,0 +1,38 @@
+body{
+    background-color: steelblue;
+    margin: 0;
+    padding: 0;
+    
+    }
+    h1{
+        text-align: center;
+        color: white;
+}
+h2{
+    text-align: center;
+    color: white;
+}
+.navBar{
+    overflow: hidden;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+}
+.navBar a:hover{
+    background-color: white;
+    color: black;
+    text-align: center;
+}
+.navBar a{
+    float: center;
+    color:white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navBar a.active {
+    background-color: steelblue;
+    color: white;
+  }
