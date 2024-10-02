@@ -53,3 +53,21 @@ h2{
     margin-left: 35%;
     color: white;
 }
+
+.waveHeight{
+    width: 60%;            /* Limits the width to 60% of the screen (adjust as needed) */
+    text-align: left;      /* Aligns the text to the left inside the container */
+    padding: 25px;         /* Adds padding around the text */
+    line-height: 1.4;
+    color: white;
+}
+
+.tides{
+    text-align: right;
+    width: 60%;                 
+    padding: 10px;         
+    line-height: 1.4;
+    margin-left: 35%;
+    color: white;
+    
+}
