@@ -16,6 +16,10 @@ h3{
     text-align: center;
     color: white;
 }
+h4{
+    text-align: center;
+    color: white; 
+}
 .navBar{
     overflow: hidden;
     text-align: center;
@@ -40,3 +44,18 @@ h3{
     background-color: steelblue;
     color: white;
   }
+
+.windywind{
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    padding: 20px;
+}
+
+.weather{
+    display: flex;                 /* Enables flexbox for horizontal alignment */
+    justify-content: center; /* Adds space between the two widgets */
+    margin: 20px auto;             /* Centers the container and adds margin */
+    width: 90%;  
+}
+

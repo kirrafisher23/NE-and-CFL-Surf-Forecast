@@ -14,6 +14,7 @@ body{
         width: 450px;
         margin-left: auto;
         margin-right: auto;
+        border-radius: 10px;
         
     }
     .navBar{
@@ -50,6 +51,7 @@ body{
         margin-top: 20px;
         border-collapse: collapse; 
         width: 60%; 
+        border-radius: 10%;
     }
     td {
         padding: 10px;
@@ -60,3 +62,15 @@ body{
         color: blue;
         text-decoration: none;
     }
+    .widget-container {
+        display: flex;                 /* Enables flexbox for horizontal alignment */
+        justify-content: space-between; /* Adds space between the two widgets */
+        margin: 20px auto;             /* Centers the container and adds margin */
+        width: 90%;                    /* Adjust the width of the entire container */
+    }
+    
+    #sc-widget-497, #sc-widget-500 {
+        width: 45%;                    /* Each widget takes up 45% of the container width */
+        margin: 10px;                  /* Optional: Adds some spacing around each widget */
+    }
+    

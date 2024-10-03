@@ -49,6 +49,7 @@ h4{
     margin-left: auto;       /* Align the image to the right */
     margin-right: 0px;       /* Keeps it against the right edge */
     margin-bottom: 20px;     /* Adds some space below the image */
+    border-radius: 5%;
 }
 
 .about2contain{
@@ -65,7 +66,8 @@ h4{
     position: relative;
     margin-left: 0px;        
     margin-right: auto;      
-    margin-bottom: 20px;     
+    margin-bottom: 20px;   
+    border-radius: 5%;  
 }
 
 .about3contain{
