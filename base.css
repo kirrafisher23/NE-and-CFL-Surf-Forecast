@@ -17,30 +17,47 @@ body{
         border-radius: 10px;
         
     }
-    .navBar{
-        overflow: hidden;
-        text-align: center;
-        width: 60%;
-        margin: 0 auto;
+    .navBar {
+        display: flex;               /* Enables flexbox for alignment */
+        justify-content: center;      /* Centers the links */
+        align-items: center;          /* Aligns items vertically */
+        width: 100%;
+        background-color: steelblue;  /* Set the background color */
     }
-    .navBar a:hover{
-        background-color: white;
-        color: black;
+    
+    .logo-container {
+        flex: 1;                      /* Pushes the logo to the left */
+        text-align: left;
+        padding-left: 10px;
+    }
+    
+    .links-container {
+        flex: 2;                      /* Keeps the links centered */
         text-align: center;
     }
-    .navBar a{
-        float: center;
-        color:white;
-        text-align: center;
+    
+    .navBar img {
+        height: 200px;
+        margin-left: 0;                 /* Adjust size as needed */
+    }
+    
+    .navBar a {
+        color: white;
         padding: 14px 16px;
         text-decoration: none;
         font-size: 17px;
     }
     
+    .navBar a:hover {
+        background-color: white;
+        color: black;
+    }
+    
     .navBar a.active {
         background-color: steelblue;
         color: white;
-      }
+    }
+    
     
     table{
         color: white;
