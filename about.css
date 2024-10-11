@@ -11,30 +11,59 @@ h1{
 h4{
     color: white;
 }
-.navBar{
-    overflow: hidden;
-    text-align: center;
-    width: 60%;
-    margin: 0 auto;
+/* Main NavBar */
+.navBar {
+    display: flex;
+    justify-content: space-between; /* Space between logo and nav links */
+    align-items: center;
+    padding: 10px 20px;
+    width: 100%;
+    box-sizing: border-box;
 }
-.navBar a:hover{
+
+.navBar .navLinks {
+    display: flex;
+    justify-content: center; /* Center the nav links */
+    flex-grow: 1; /* Let the nav links take up available space */
+    text-align: center; /* Center the nav text */
+    margin-left: -200px;
+}
+
+.navBar a:hover {
     background-color: white;
     color: black;
-    text-align: center;
 }
-.navBar a{
-    float: center;
-    color:white;
-    text-align: center;
-    padding: 14px 16px;
+
+.navBar a {
+    color: white;
+    padding: 14px 10px; /* Adjust padding for smaller tab size */
     text-decoration: none;
     font-size: 17px;
+    margin: 0 10px; /* Minimal spacing between nav items */
 }
 
 .navBar a.active {
     background-color: steelblue;
     color: white;
-  }
+}
+
+/* Logo Adjustments */
+.logo img {
+    width: 150px; /* Adjust the size of the logo */
+    height: auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-right: 20px; /* Space between the logo and nav links */
+    flex-shrink: 0; /* Prevent the logo from shrinking */
+}
+
+/* Ensure hover effects don't apply to the logo */
+.logo a:hover {
+    background-color: transparent;
+}
 .about1contain{
     width: 60%;            /* Limits the width to 60% of the screen (adjust as needed) */
     text-align: left;      /* Aligns the text to the left inside the container */

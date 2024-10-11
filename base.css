@@ -1,93 +1,106 @@
-body{
+body {
     background-color: steelblue;
     margin: 0;
     padding: 0;
-    
-    }
-    
-    h1{
-        text-align: center;
-        color: white;
-    }
-    img {
-        display: block;
-        width: 450px;
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 10px;
-        
-    }
-    .navBar {
-        display: flex;               /* Enables flexbox for alignment */
-        justify-content: center;      /* Centers the links */
-        align-items: center;          /* Aligns items vertically */
-        width: 100%;
-        background-color: steelblue;  /* Set the background color */
-    }
-    
-    .logo-container {
-        flex: 1;                      /* Pushes the logo to the left */
-        text-align: left;
-        padding-left: 10px;
-    }
-    
-    .links-container {
-        flex: 2;                      /* Keeps the links centered */
-        text-align: center;
-    }
-    
-    .navBar img {
-        height: 200px;
-        margin-left: 0;                 /* Adjust size as needed */
-    }
-    
-    .navBar a {
-        color: white;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 17px;
-    }
-    
-    .navBar a:hover {
-        background-color: white;
-        color: black;
-    }
-    
-    .navBar a.active {
-        background-color: steelblue;
-        color: white;
-    }
-    
-    
-    table{
-        color: white;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-        background-color: teal;
-        margin-top: 20px;
-        border-collapse: collapse; 
-        width: 60%; 
-        border-radius: 10%;
-    }
-    td {
-        padding: 10px;
-        text-align: center;
-    }
-    
-    td a {
-        color: blue;
-        text-decoration: none;
-    }
-    .widget-container {
-        display: flex;                 /* Enables flexbox for horizontal alignment */
-        justify-content: space-between; /* Adds space between the two widgets */
-        margin: 20px auto;             /* Centers the container and adds margin */
-        width: 90%;                    /* Adjust the width of the entire container */
-    }
-    
-    #sc-widget-497, #sc-widget-500 {
-        width: 45%;                    /* Each widget takes up 45% of the container width */
-        margin: 10px;                  /* Optional: Adds some spacing around each widget */
-    }
-    
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+img {
+    display: block;
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
+/* Main NavBar */
+.navBar {
+    display: flex;
+    justify-content: space-between; /* Space between logo and nav links */
+    align-items: center;
+    padding: 10px 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.navBar .navLinks {
+    display: flex;
+    justify-content: center; /* Center the nav links */
+    flex-grow: 1; /* Let the nav links take up available space */
+    text-align: center; /* Center the nav text */
+    margin-left: -200px;
+}
+
+.navBar a:hover {
+    background-color: white;
+    color: black;
+}
+
+.navBar a {
+    color: white;
+    padding: 14px 10px; /* Adjust padding for smaller tab size */
+    text-decoration: none;
+    font-size: 17px;
+    margin: 0 10px; /* Minimal spacing between nav items */
+}
+
+.navBar a.active {
+    background-color: steelblue;
+    color: white;
+}
+
+/* Logo Adjustments */
+.logo img {
+    width: 150px; /* Adjust the size of the logo */
+    height: auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-right: 20px; /* Space between the logo and nav links */
+    flex-shrink: 0; /* Prevent the logo from shrinking */
+}
+
+/* Ensure hover effects don't apply to the logo */
+.logo a:hover {
+    background-color: transparent;
+}
+
+table {
+    color: white;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: teal;
+    margin-top: 20px;
+    border-collapse: collapse;
+    width: 60%;
+    border-radius: 10%;
+}
+
+td {
+    padding: 10px;
+    text-align: center;
+}
+
+td a {
+    color: blue;
+    text-decoration: none;
+}
+
+.widget-container {
+    display: flex;
+    justify-content: space-between; /* Adds space between the two widgets */
+    margin: 20px auto; /* Centers the container and adds margin */
+    width: 90%; /* Adjust the width of the entire container */
+}
+
+#sc-widget-497, #sc-widget-500 {
+    width: 45%; /* Each widget takes up 45% of the container width */
+    margin: 10px;
+}
