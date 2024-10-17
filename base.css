@@ -7,6 +7,7 @@ body {
 h1 {
     text-align: center;
     color: white;
+    text-shadow: 10px 10px 10px coral;
 }
 
 img {
@@ -81,6 +82,7 @@ table {
     border-collapse: collapse;
     width: 60%;
     border-radius: 10%;
+    box-shadow: 10px 10px 10px coral;
 }
 
 td {

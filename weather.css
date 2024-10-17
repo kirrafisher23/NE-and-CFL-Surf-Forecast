@@ -84,8 +84,8 @@ h4{
 
 .weather{
     display: flex;                 /* Enables flexbox for horizontal alignment */
-    justify-content: center; /* Adds space between the two widgets */
-    margin: 30px auto;             /* Centers the container and adds margin */
-    width: 90%;  
+    justify-content: space-evenly;
+    margin: auto 200px;             /* Centers the container and adds margin */
+    width: 90%;
 }
 
