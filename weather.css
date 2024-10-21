@@ -7,18 +7,22 @@ body{
 h1{
         text-align: center;
         color: white;
+        font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
 }
 h2{
     text-align: center;
     color: white;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
 }
 h3{
     text-align: center;
     color: white;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
 }
 h4{
     text-align: center;
     color: white; 
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
 }
 /* Main NavBar */
 .navBar {
@@ -28,6 +32,7 @@ h4{
     padding: 10px 20px;
     width: 100%;
     box-sizing: border-box;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
 }
 
 .navBar .navLinks {

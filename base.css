@@ -1,5 +1,5 @@
 body {
-    background-color: steelblue;
+    background-color: steelblue ;
     margin: 0;
     padding: 0;
 }
@@ -8,6 +8,8 @@ h1 {
     text-align: center;
     color: white;
     text-shadow: 10px 10px 10px coral;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    padding-bottom: 20px;
 }
 
 img {
@@ -23,9 +25,10 @@ img {
     display: flex;
     justify-content: space-between; /* Space between logo and nav links */
     align-items: center;
-    padding: 10px 20px;
+    padding: 10px;
     width: 100%;
     box-sizing: border-box;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
 }
 
 .navBar .navLinks {
@@ -81,7 +84,7 @@ table {
     margin-top: 20px;
     border-collapse: collapse;
     width: 60%;
-    border-radius: 10%;
+    border-radius: 5%;
     box-shadow: 10px 10px 10px coral;
 }
 
