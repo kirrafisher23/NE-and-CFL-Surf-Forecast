@@ -24,47 +24,43 @@ h5{
     color: white;
     font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
 }
-/* Main NavBar */
-.navBar {
-    display: flex;
-    justify-content: space-between; /* Space between logo and nav links */
-    align-items: center;
-    padding: 10px 20px;
-    width: 100%;
-    box-sizing: border-box;
-    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+/* Nav Pills Styling */
+.nav-pills {
+    gap: 10px; /* Adds space between pills */
+    flex-wrap: nowrap; /* Prevents wrapping to vertical */
+    overflow-x: auto; /* Allow horizontal scrolling if needed */
+   /* margin-right: 200px;*/
 }
 
-.navBar .navLinks {
-    display: flex;
-    justify-content: center; /* Center the nav links */
-    flex-grow: 1; /* Let the nav links take up available space */
-    text-align: center; /* Center the nav text */
-    margin-left: -200px;
-}
-
-.navBar a:hover {
-    background-color: white;
-    color: black;
-}
-
-.navBar a {
+.nav-link {
     color: white;
-    padding: 14px 10px; /* Adjust padding for smaller tab size */
-    text-decoration: none;
-    font-size: 17px;
-    margin: 0 10px; /* Minimal spacing between nav items */
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
 }
 
-.navBar a.active {
-    background-color: steelblue;
+.nav-link.active {
+    background-color: coral !important;
     color: white;
 }
 
-/* Logo Adjustments */
-.logo img {
-    width: 150px; /* Adjust the size of the logo */
-    height: auto;
+.nav-link:hover {
+    background-color: lightcoral;
+    color: white;
+}
+
+/* Responsive Layout Fixes */
+@media (max-width: 768px) {
+    .nav-pills {
+        justify-content: center; /* Keep centered on small screens */
+    }
+}
+
+/* Logo Styling */
+.logo-img {
+    max-height: 100px;
+    width: auto;  /* Prevent stretching */
 }
 
 .logo {
@@ -78,7 +74,6 @@ h5{
 .logo a:hover {
     background-color: transparent;
 }
-
 .windUnderstanding{
     width: 60%;            /* Limits the width to 60% of the screen (adjust as needed) */
     text-align: left;      /* Aligns the text to the left inside the container */

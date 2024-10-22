@@ -9,23 +9,38 @@
 </head>
 <body>
 
-       
-        <div class="navBar">
-            <div class="logo">
+    <!-- Navbar -->
+    <div class="container-fluid py-2">
+        <div class="row align-items-center">
+            <!-- Logo Section -->
+            <div class="col-auto">
                 <a href="base.html">
-                    <img src="navbarlogo.png" alt="Logo">
+                    <img src="navbarlogo.png" alt="Logo" class="img-fluid logo-img">
                 </a>
             </div>
-            <div class="container">
-            <div class="navLinks">
-                <a class="active" href="base.html">Home</a>
-                <a href="weather.html">Weather</a>
-                <a href="forecast understanding.html">Forecast Understanding</a>
-                <a href="about.html">About</a>
+
+            <!-- Navbar Pills Section -->
+            <div class="col d-flex justify-content-center">
+                <ul class="nav nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="base.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="weather.html">Weather</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="forecast understanding.html">Forecast Understanding</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
-        
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
         
     <h1>North East and Central Florida Surf Forecasts</h1>
 
@@ -86,11 +101,20 @@
     </div>
 
 
-    <div class="row">
-        <div class="col">
-            <div class="widget-container">
-                <div id="sc-widget-497" data-sc-widget-type="report" data-sc-widget-slug="jacksonville-beach-florida" data-sc-widget-theme="light" data-sc-widget-units="1"></div>
-                <div id="sc-widget-500" data-sc-widget-type="report" data-sc-widget-slug="cocoa-beach-florida" data-sc-widget-theme="light" data-sc-widget-units="1"></div>
+    <div class="container my-4">
+        <div class="row">
+            <!-- First Widget -->
+            <div class="col-12 col-md-6 mb-3">
+                <div class="widget-box">
+                    <div id="sc-widget-497" data-sc-widget-type="report" data-sc-widget-slug="jacksonville-beach-florida" data-sc-widget-theme="light" data-sc-widget-units="1"></div>
+                </div>
+            </div>
+    
+            <!-- Second Widget -->
+            <div class="col-12 col-md-6 mb-3">
+                <div class="widget-box">
+                    <div id="sc-widget-500" data-sc-widget-type="report" data-sc-widget-slug="cocoa-beach-florida" data-sc-widget-theme="light" data-sc-widget-units="1"></div>
+                </div>
             </div>
         </div>
     </div>

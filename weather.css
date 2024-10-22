@@ -4,67 +4,49 @@ body{
     padding: 0;
     
     }
-h1{
+h1,h2,h3,h4{
         text-align: center;
         color: white;
         font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
 }
-h2{
-    text-align: center;
+
+/* Nav Pills Styling */
+.nav-pills {
+    gap: 10px; /* Adds space between pills */
+    flex-wrap: nowrap; /* Prevents wrapping to vertical */
+    overflow-x: auto; /* Allow horizontal scrolling if needed */
+   /* margin-right: 200px;*/
+}
+
+.nav-link {
     color: white;
-    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
-}
-h3{
-    text-align: center;
-    color: white;
-    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
-}
-h4{
-    text-align: center;
-    color: white; 
-    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
-}
-/* Main NavBar */
-.navBar {
-    display: flex;
-    justify-content: space-between; /* Space between logo and nav links */
-    align-items: center;
-    padding: 10px 20px;
-    width: 100%;
-    box-sizing: border-box;
-    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
 }
 
-.navBar .navLinks {
-    display: flex;
-    justify-content: center; /* Center the nav links */
-    flex-grow: 1; /* Let the nav links take up available space */
-    text-align: center; /* Center the nav text */
-    margin-left: -200px;
-}
-
-.navBar a:hover {
-    background-color: white;
-    color: black;
-}
-
-.navBar a {
-    color: white;
-    padding: 14px 10px; /* Adjust padding for smaller tab size */
-    text-decoration: none;
-    font-size: 17px;
-    margin: 0 10px; /* Minimal spacing between nav items */
-}
-
-.navBar a.active {
-    background-color: steelblue;
+.nav-link.active {
+    background-color: coral !important;
     color: white;
 }
 
-/* Logo Adjustments */
-.logo img {
-    width: 150px; /* Adjust the size of the logo */
-    height: auto;
+.nav-link:hover {
+    background-color: lightcoral;
+    color: white;
+}
+
+/* Responsive Layout Fixes */
+@media (max-width: 768px) {
+    .nav-pills {
+        justify-content: center; /* Keep centered on small screens */
+    }
+}
+
+/* Logo Styling */
+.logo-img {
+    max-height: 100px;
+    width: auto;  /* Prevent stretching */
 }
 
 .logo {
@@ -79,18 +61,30 @@ h4{
     background-color: transparent;
 }
 
-.windywind{
-    margin-left: auto;
-    margin-right: auto;
-    width: 40%;
-    padding: 20px;
+/* Windy Widget Styling */
+.windywind {
+    margin: 0 auto;
+    width: 100%; /* Full width on mobile */
+    max-width: 800px; /* Limit width on larger screens */
+    padding: 10px;
     border-radius: 5%;
 }
 
-.weather{
-    display: flex;                 /* Enables flexbox for horizontal alignment */
-    justify-content: space-evenly;
-    margin: auto 200px;             /* Centers the container and adds margin */
-    width: 90%;
+/* Responsive Iframe Styling */
+.responsive-iframe {
+    width: 100%; /* Full width within the column */
+    height: 420px; /* Adjust as needed */
+    border: none;
+}
+
+/* Add spacing between widgets */
+.container .row {
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .responsive-iframe {
+        height: 400px; /* Smaller height for smaller screens */
+    }
 }
 

@@ -8,43 +8,73 @@
 </head>
 <body>
 
-    <div class="navBar">
-        <div class="logo">
-            <a href="base.html">
-                <img src="navbarlogo.png" alt="Logo">
-            </a>
-        </div>
-        <div class="container">
-        <div class="navLinks">
-            <a class="active" href="base.html">Home</a>
-            <a href="weather.html">Weather</a>
-            <a href="forecast understanding.html">Forecast Understanding</a>
-            <a href="about.html">About</a>
+    <!-- Navbar -->
+    <div class="container-fluid py-2">
+        <div class="row align-items-center">
+            <!-- Logo Section -->
+            <div class="col-auto">
+                <a href="base.html">
+                    <img src="navbarlogo.png" alt="Logo" class="img-fluid logo-img">
+                </a>
+            </div>
+
+            <!-- Navbar Pills Section -->
+            <div class="col d-flex justify-content-center">
+                <ul class="nav nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link" href="base.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="weather.html">Weather</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="forecast understanding.html">Forecast Understanding</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
-</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 <h1>Weather</h1>
 <h3>Objectively some of the best Florida waves are from wind swells might as well see the wind outlook</h3>
 <h4> The conversion from KT to MPH is KT times 1.15 </h4>
 
-<div class="row">
-    <div class="col">
-        <div class="windywind">
-            <iframe width="800" height="650" src="https://embed.windy.com/embed.html?type=map&location=coordinates&metricRain=in&metricTemp=°F&metricWind=kt&zoom=7&overlay=wind&product=ecmwf&level=surface&lat=29.066&lon=-80.123&detailLat=28.536274512989916&detailLon=-80.38696289062501&marker=true" frameborder="0"></iframe>
+    <!-- Windy Widget Section -->
+    <div class="container my-4">
+        <div class="row">
+            <div class="col-12">
+                <div class="windywind">
+                    <iframe class="responsive-iframe" src="https://embed.windy.com/embed.html?type=map&location=coordinates&metricRain=in&metricTemp=°F&metricWind=kt&zoom=7&overlay=wind&product=ecmwf&level=surface&lat=29.066&lon=-80.123" frameborder="0"></iframe>
+                </div>
+            </div>
         </div>
-    </div>    
-</div>
+    </div>
 
 <h2> Weather Forecast for North and Central Florida</h2>
-<div class="row">
-    <div class="col">
-        <div class="weather">
-            <iframe src="https://www.meteoblue.com/en/weather/widget/daily/jacksonville_united-states_4160021?geoloc=fixed&days=5&tempunit=FAHRENHEIT&windunit=MILE_PER_HOUR&precipunit=INCH&coloured=monochrome&pictoicon=1&maxtemperature=1&mintemperature=1&windspeed=1&windgust=1&winddirection=1&uv=1&humidity=0&precipitation=1&precipitationprobability=1&spot=1&pressure=0&layout=light"  frameborder="0" scrolling="NO" allowtransparency="true" sandbox="allow-same-origin allow-scripts allow-popups allow-popups-to-escape-sandbox" style="width: 270px; height: 420px"></iframe><div><!-- DO NOT REMOVE THIS LINK --><a href="https://www.meteoblue.com/en/weather/week/jacksonville_united-states_4160021?utm_source=daily_widget&utm_medium=linkus&utm_content=daily&utm_campaign=Weather%2BWidget" target="_blank" rel="noopener"></a></div>
-            <iframe src="https://www.meteoblue.com/en/weather/widget/daily/satellite-beach_united-states_4172173?geoloc=fixed&days=5&tempunit=FAHRENHEIT&windunit=MILE_PER_HOUR&precipunit=INCH&coloured=monochrome&pictoicon=1&maxtemperature=1&mintemperature=1&windspeed=1&windgust=1&winddirection=1&uv=1&humidity=0&precipitation=1&precipitationprobability=1&spot=1&pressure=0&layout=light"  frameborder="0" scrolling="NO" allowtransparency="true" sandbox="allow-same-origin allow-scripts allow-popups allow-popups-to-escape-sandbox" style="width: 270px; height: 420px"></iframe><div><!-- DO NOT REMOVE THIS LINK --><a href="https://www.meteoblue.com/en/weather/week/satellite-beach_united-states_4172173?utm_source=daily_widget&utm_medium=linkus&utm_content=daily&utm_campaign=Weather%2BWidget" target="_blank" rel="noopener"></a></div>  
+<div class="container my-4">
+    <div class="row justify-content-center g-4">
+        <!-- Jacksonville Weather Widget -->
+        <div class="col-12 col-md-6">
+            <iframe class="responsive-iframe" 
+                src="https://www.meteoblue.com/en/weather/widget/daily/jacksonville_united-states_4160021?geoloc=fixed&days=5&tempunit=FAHRENHEIT&windunit=MILE_PER_HOUR&precipunit=INCH" 
+                frameborder="0" scrolling="NO" allowtransparency="true">
+            </iframe>
         </div>
-    </div>    
-</div>    
+
+        <!-- Satellite Beach Weather Widget -->
+        <div class="col-12 col-md-6">
+            <iframe class="responsive-iframe" 
+                src="https://www.meteoblue.com/en/weather/widget/daily/satellite-beach_united-states_4172173?geoloc=fixed&days=5&tempunit=FAHRENHEIT&windunit=MILE_PER_HOUR&precipunit=INCH" 
+                frameborder="0" scrolling="NO" allowtransparency="true">
+            </iframe>
+        </div>
+    </div>
+</div>
 
 </body>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
