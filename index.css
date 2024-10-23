@@ -1,0 +1,115 @@
+body {
+    background-color: steelblue ;
+    margin: 0;
+    padding: 0;
+    display: flex;            /* Use flexbox for centering */
+    flex-direction: column;  /* Stack elements vertically */
+    align-items: center;     /* Center elements horizontally */
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    text-shadow: 10px 10px 10px coral;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    padding-bottom: 20px;
+}
+a{
+    display: inline-block;
+    text-align: center;
+}
+img {
+    display: block;
+    width: 450px;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+/* Nav Pills Styling */
+.nav-pills {
+    gap: 10px; /* Adds space between pills */
+    flex-wrap: nowrap; /* Prevents wrapping to vertical */
+    overflow-x: auto; /* Allow horizontal scrolling if needed */
+   /* margin-right: 200px;*/
+}
+
+.nav-link {
+    color: white;
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+}
+
+.nav-link.active {
+    background-color: coral !important;
+    color: white;
+}
+
+.nav-link:hover {
+    background-color: lightcoral;
+    color: white;
+}
+
+/* Responsive Layout Fixes */
+@media (max-width: 768px) {
+    .nav-pills {
+        justify-content: center; /* Keep centered on small screens */
+    }
+}
+
+/* Logo Styling */
+.logo-img {
+    max-height: 100px;
+    width: auto;  /* Prevent stretching */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-right: 20px; /* Space between the logo and nav links */
+    flex-shrink: 0; /* Prevent the logo from shrinking */
+}
+
+/* Ensure hover effects don't apply to the logo */
+.logo a:hover {
+    background-color: transparent;
+}
+
+table {
+    color: white;
+    margin: 20px auto;
+    text-align: center;
+    background-color: teal;
+    border-collapse: collapse;
+    width: 100%;
+    border-radius: 5%;
+    box-shadow: 10px 10px 10px coral;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+}
+
+td {
+    padding: 10px;
+    text-align: center;
+}
+
+td a {
+    color: blue;
+    text-decoration: none;
+}
+
+/* Widget Box Styling */
+.widget-box {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: 100%; /* Ensure it takes full width */
+}
+
+/* Add a margin between widgets */
+@media (max-width: 768px) {
+    .widget-box {
+        margin-bottom: 20px; /* Space between stacked widgets */
+    }
+}
