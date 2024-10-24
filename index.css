@@ -77,10 +77,10 @@ img {
 }
 
 table {
-    color: white;
+    color: black;
     margin: 20px auto;
     text-align: center;
-    background-color: teal;
+    background-color: greenyellow;
     border-collapse: collapse;
     width: 100%;
     border-radius: 5%;
