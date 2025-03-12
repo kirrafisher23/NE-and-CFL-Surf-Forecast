@@ -1,3 +1,9 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: all 0.4s;
+}
 body {
     background-color: steelblue ;
     margin: 0;
@@ -5,6 +11,7 @@ body {
     display: flex;            /* Use flexbox for centering */
     flex-direction: column;  /* Stack elements vertically */
     align-items: center;     /* Center elements horizontally */
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
 }
 
 h1 {
@@ -19,62 +26,71 @@ a{
     text-align: center;
 }
 img {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
     width: 450px;
-    margin: 20px auto;
+    margin:auto;
     border-radius: 10px;
 }
 
+.row {
+  display: flex;
+  align-items: center;
+}
+
+
 /* Nav Pills Styling */
 .nav-pills {
-    gap: 10px; /* Adds space between pills */
-    flex-wrap: nowrap; /* Prevents wrapping to vertical */
-    overflow-x: auto; /* Allow horizontal scrolling if needed */
-   /* margin-right: 200px;*/
+  margin-left: 0px; /* Reduce any extra space */
+  padding-left: 0px;
 }
 
 .nav-link {
-    color: white;
-    background-color: transparent;
-    border-radius: 5px;
-    padding: 10px 15px;
-    transition: background-color 0.3s;
+  color: white;
+  background-color: transparent;
+  border-radius: 5px;
+  padding: 10px 15px;
+  transition: background-color 0.3s;
 }
 
 .nav-link.active {
-    background-color: coral !important;
-    color: white;
+  background-color: coral !important;
+  color: white;
 }
 
 .nav-link:hover {
-    background-color: lightcoral;
-    color: white;
+  background-color: lightcoral;
+  color: white;
 }
 
 /* Responsive Layout Fixes */
 @media (max-width: 768px) {
-    .nav-pills {
-        justify-content: center; /* Keep centered on small screens */
-    }
+  .nav-pills {
+      justify-content: center; /* Keep centered on small screens */
+  }
 }
 
 /* Logo Styling */
 .logo-img {
-    max-height: 100px;
-    width: auto;  /* Prevent stretching */
+  max-height: 70px; /* Reduce height slightly if necessary */
+  width: auto;
+  margin-right: 0px; /* Remove any extra right margin */
+  padding-left: 0px; /* Ensure it has no left padding */
 }
 
 .logo {
-    display: flex;
-    align-items: center;
-    margin-right: 20px; /* Space between the logo and nav links */
-    flex-shrink: 0; /* Prevent the logo from shrinking */
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-shrink: 0; /* Prevent the logo from shrinking */
 }
 
 /* Ensure hover effects don't apply to the logo */
 .logo a:hover {
-    background-color: transparent;
+  background-color: transparent;
 }
+
 
 table {
     color: black;
